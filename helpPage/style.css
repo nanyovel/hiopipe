@@ -1,0 +1,137 @@
+/* ----------Left Box// ------------- */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+}
+.boxLeft .boxImg{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.boxLeft .boxImg img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    
+}
+
+/* ----------Right Box // h1------------- */
+.boxRight{
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+
+.boxRight .containerQuestion{
+    width: 85%;
+    padding: 0 0 30px 0;
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.boxRight::-webkit-scrollbar{
+    width: 7px;
+}
+.boxRight::-webkit-scrollbar-thumb{
+    background-color: var(--colorPrimary);
+    border-radius: 7px;
+}
+
+.boxRight  h1{
+    font-size: 70px;
+    font-weight: 300;
+    /* color: rgb(101, 99, 99); */
+    color: var(--colorPrimary);
+    border-bottom: 1px solid #000;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.boxRight .section{
+    width: 95%;
+    height: auto;
+    background-color: var(--colorThird);
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 10px 25px 25px 25px;
+}
+.boxRight .nameSection{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: end;
+}
+
+.boxRight .nameSection h2{
+    display: inline-block;
+    font-size: 1.5rem;
+    /* border: 1px solid black; */
+    text-align: center;
+    /* background-color: var(--colorGray); */
+    color: var(--colorGray);
+    border-bottom: 1px solid black;
+}
+
+.boxRight .boxQuestionAnswers .boxQuestion h2{
+    color:  var(--colorPrimary);
+    border-bottom: 1px solid #000;
+    /* margin-bottom: 10px; */
+}
+
+.boxRight .boxQuestionAnswers .boxAnswers p{
+    /* background-color: aqua; */
+    color: var(--colorGray);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .boxRight h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .boxRight .nameSection h2{
+        font-size: 1.1rem;
+    }
+    .boxRight .boxQuestionAnswers .boxQuestion h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .boxLeft{
+        width: 100%;
+    }
+    .boxLogoCenter{
+        top: 50%;
+    }
+    .boxRight{
+        width: 100%;
+        padding-top: 45px;
+        overflow-y: auto;
+    }
+    .boxRight .containerQuestion{
+        overflow-y: scroll;
+    }
+    .boxRight h1{
+        font-size: 40px;
+    }
+}

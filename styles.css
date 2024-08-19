@@ -1,0 +1,727 @@
+/* ----------Left Box// ------------- */
+.boxLeft .boxMaini{
+    width: 100%;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.boxLeft .boxMaini::-webkit-scrollbar{
+    width: 7px;
+}
+.boxLeft .boxMaini::-webkit-scrollbar-thumb{
+    background-color: var(--colorPrimary);
+    border-radius: 7px;
+}
+
+.section{
+    width: 95%;
+    height: 80vh;
+    background-color: var(--colorThird);
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.titles{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    color: var(--colorPrimary);
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+/* ----------Left Box// Welcome------------- */
+.boxLeft .boxMaini .welcome h1{
+    font-size: 80px;
+    font-weight: 300;
+    color: var(--colorPrimary);
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.boxLeft .boxMaini .welcome p{
+    font-size: 1.5rem;
+}
+
+/* ----------Left Box// Updates Table------------- */
+.updates{
+    justify-content: center;
+    align-items: center;
+}
+
+.tableUpdates{
+    border: 1px solid #000;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.tableUpdates tr th{
+    border: 1px solid #000;
+}
+
+.tableUpdates .rowHeader{
+    background-color: var(--colorPrimary);
+    border-bottom: 5x solid black;
+    color: #fff;
+}
+
+.cornerUL{
+    border-radius: 10px 0 0 0;
+}
+
+.cornerUR{
+    border-radius: 0 10px 0 0;
+}
+
+.cornerDL{
+    border-radius: 0 0 0 10px;
+}
+.cornerDR{
+    border-radius: 0 0 10px 0;
+}
+
+
+/* ----------Left Box// Advantage------------- */
+.advantage{    
+    width: 100%;
+    height: 200px;
+    border: none;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+
+.advantage .containerAdvantage{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    /* border: 1px solid green; */
+
+}
+
+.advantage .containerAdvantage .boxAdvantage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advantage .containerAdvantage .boxAdvantage img{
+    width: 30%;
+}
+
+.advantage .containerAdvantage .boxAdvantage h3{
+    font-size: 1rem;
+}
+
+.advantage .containerAdvantage .boxAdvantage p{
+    font-size: 0.9rem;
+}
+
+
+/* ----------Left Box// Form------------- */
+.sectionForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.sectionForm .subTitlesForm{
+    text-align: start;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.form{
+    height: 90%;
+    width: 80%;
+}
+.form .formLabel{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form .boxForm{
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.form .titleError{
+    color: var(--colorAlert) ;
+}
+
+.form .boxForm .boxInput{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.form .boxForm .boxInput .input{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: 0.4s ease all;
+    outline: none;
+}
+
+.form .boxForm .boxInput .input:focus{
+    outline: none;
+    box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+    -webkit-box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+    -moz-box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+
+}
+
+.form .boxForm .messageError{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.form .boxForm .messageErrorActive{
+    display: block;
+}
+
+.form .boxForm .boxInput .iconName{
+    position: absolute;
+    right: 10px;
+    z-index: 5px;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.form .boxForm .errorMessageInput{
+    height: 50px;
+    line-height: 20px;
+    color: var(--colorAlert);
+    padding: 0 5px;
+    border-radius: 3px;
+    width: 99%;
+    display: none;
+}
+
+.form .boxForm .errorMessageInputActive{
+    display: block;
+}
+
+.form .boxTermsConditions{
+
+    margin-bottom: 50px;
+    height: 50px;
+}
+
+form .boxTermsConditions label,
+.form .boxTermsConditions b
+{
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.form .boxTermsConditions label input:hover{
+    cursor: pointer;
+}
+
+.form .boxTermsConditions .messageAceptTerms{
+    color: var(--colorAlert);
+    margin-bottom: 25px;
+    display: none;
+}
+
+.form .boxBtnSubmit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .boxBtnSubmit button{
+    height: 45px;
+    line-height: 45px;
+    width: 40%;
+    background-color: var(--colorPrimary);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+
+.form .boxBtnSubmit button:hover{
+    box-shadow: 3px 0px 30px rgba(24, 120, 241,1);
+    transform: scale(1.1);
+}
+
+.form .boxBtnSubmit .boxMessage{
+    display: none;
+    background-color: var(--colorSuccess);
+    width: 90%;
+    text-align: start;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form .boxBtnSubmit .boxMessageActive{
+    display: block;
+}
+
+.form .boxBtnSubmit .boxMessage p{
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.form .boxErrorMessage{
+    font-size: 12px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: none;
+}
+
+.form .boxErrorMessage i,
+.form .boxErrorMessage b
+{
+    color: var(--colorAlert);
+}
+
+/* ----------Left Box// Form // Validations------------- */
+
+.form .boxForm .boxInput  .inputIncorrect{
+    border: 3px solid var(--colorAlert);
+}
+
+.form .boxForm .boxInput .iconActive{
+    opacity: 1;
+}
+
+.form .boxForm .boxInput .iconSuccess{
+    color: var(--colorSuccess);
+}
+
+.form .boxForm .boxInput .iconIncorrect{
+    color: var(--colorAlert);
+}
+
+
+/* ----------Left Box// AdvantageText------------- */
+.advantageText{
+    height: auto;
+}
+
+.containerAdvanteText .boxAdvantageText{
+    display: flex;
+    border: 1px solid var(--colorGray);
+    border-radius: 5px;
+}
+
+.containerAdvanteText .boxIconLetter{
+    display: flex;
+    align-items: center;
+}
+
+.containerAdvanteText .boxIconLetter i{
+    font-size: 3rem;
+    width: 100px;
+    text-align: center;
+    line-height: 3rem;
+    color: var(--colorPrimary);
+}
+
+.containerAdvanteText .boxLetters h3{
+    color: var(--colorPrimary);
+}
+
+
+
+/* ----------Right Box // TagsProducts------------- */
+.boxRight{
+    overflow: hidden;
+}
+.boxRight .boxTagsProducst{
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    z-index: 1;
+}
+
+
+
+.boxRight .boxTagsProducst .tag{
+    border-radius: 16px;
+    height: 32px;
+    padding: 8px;
+    margin: auto 10px;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+/* ----------Right Box // Main------------- */
+
+.boxRight .boxMain{
+    display: flex;
+    background-color: aqua; 
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+
+.efectMoveEase{
+    transition: .6s ease left;
+
+}
+
+.boxRight .boxMain .boxItem{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: relative;
+    display: flex;
+}
+
+.boxRight .boxMain .boxItem img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* ----------Right Box // Arrows Right/Left------------- */
+.boxArrowLeft,
+.boxArrowRight{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease all .4s;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+
+
+.boxArrowLeft{
+    left: 50px;
+    
+}
+.boxArrowRight{
+    right: 20px;
+}
+
+.boxArrowRight i,
+.boxArrowLeft i{
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    z-index: 5;
+    transition: 0.3s transform ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.boxArrowLeft i {
+    padding-right: 5px;
+    
+}
+.boxArrowRight i {
+    padding-left: 5px;
+}
+
+.boxArrowRight i:hover,
+.boxArrowLeft i:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    box-shadow: 0 0 10px 5px rgb(24, 120, 241, 0.75);
+    -webkit-box-shadow: 0 0 10px 5px rgb(24, 120, 241, 0.75);;
+    -moz-box-shadow: 0 0 10px 5px rgb(24, 120, 241, 0.75);;
+}
+
+/* ----------Right Box // Pagination------------- */
+.dotPagination{
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0, .3);
+}
+
+.dotPagination .btnPagination{
+    width: 60px;
+    height: 30px;
+    color: #fff;
+    flex: 0 0 5%;
+    margin: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(0,0,0, .5);
+    transition: ease all .4s;
+    border-radius: 15px;
+}
+
+.dotPagination .btnPagination:hover{
+    border: 1px solid #fff;
+    cursor: pointer;
+    box-shadow: -2px 1px 18px 6px rgba(255,255,255,0.75);
+    -webkit-box-shadow: -2px 1px 18px 6px rgba(255,255,255,0.75);
+    -moz-box-shadow: -2px 1px 18px 6px rgba(255,255,255,0.75);
+}
+
+.dotPagination .btnPagination:active{ 
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0, 1);
+}
+
+
+.activep{
+    transform: scale(1.3);
+    background-color: rgba(0,0,0, 1);
+    border: 1px solid #fff;
+    
+}
+
+.boxItem{
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 1250px){
+    .dotPagination .btnPagination{
+        flex: 0 0 4.6%;
+    }
+    .containerAdvanteText .boxAdvantageText{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .boxLeft .boxMaini .welcome h1 {
+        font-size: 60px;
+    }
+    .dotPagination .btnPagination{
+        flex: 0 0 7.5%;
+    }
+   
+    .tableUpdates tr th{
+        font-size: 0.7rem;
+    }
+    .updates{
+        padding: 10px;
+    }
+    .advantage{
+        padding: 20PX;
+    }
+
+    .advantage .container .boxAdvantage h3{
+        font-size: 0.7rem;
+    }
+    .advantage .container .boxAdvantage p {
+        font-size: 0.6rem;
+    }
+    .advantage .container .boxAdvantage img{
+        width: 40%;
+    }
+    .advantageText{
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 900px){
+    .sectionForm{
+        padding: 10PX;
+    }
+    .form{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .boxLeft .boxMaini .welcome h1 {
+        font-size: 40px;
+    }
+    .boxLeft .boxMaini .welcome p{
+        font-size: 1.1rem;
+    }
+    .dotPagination .btnPagination{
+        flex: 0 0 7%;
+    }
+    .boxRight .boxTagsProducst{
+        flex-direction: column;
+        width: auto;
+    }
+    .boxRight .boxTagsProducst .tag{
+        margin: 4px 0;
+    }
+    .boxAdvantageText .boxLetters p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 700px){
+    .dotPagination .btnPagination{
+        flex: 0 0 6.5%;
+    }
+    .boxAdvantageText .boxLetters p{
+        font-size: 0.8rem;
+    }
+    .containerAdvanteText .boxIconLetter i{
+        font-size: 2.4rem;
+    }
+    .containerAdvanteText .boxIconLetter i {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .containerAdvanteText .boxLetters h3 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .dotPagination .btnPagination{
+        flex: 0 0 6%;
+    }
+    .boxLeft .boxMaini .welcome p{
+        font-size: 0.7rem;
+    }
+    .section{
+        padding: 15px;
+    }
+    .titles{
+        font-size: 30px;
+    }
+    .containerAdvanteText .boxIconLetter i{
+        font-size: 2rem;
+    }
+    .containerAdvanteText .boxIconLetter i {
+        width: 50px;
+    }
+    .advantage .containerAdvantage .boxAdvantage img{
+        width: 80%;
+        margin-right: 5px;
+    }
+  
+
+
+}
+@media screen and (max-width: 570px){
+    .container{
+        flex-direction: column-reverse;
+        overflow: hidden;
+
+    }
+    .boxLogoCenter{
+        top: 50%;
+    }
+    .boxLeft{
+        width: 100%;
+        padding-top: 100px;
+    }
+    .boxRight{
+        width: 100%;
+    }
+    .boxRight .boxTagsProducst {
+        left: auto;
+        right: 20px;
+        /* right: 20px; */
+    }
+    .boxArrowLeft{
+        left:20px;
+    }
+    .dotPagination .btnPagination {
+        flex: 0 0 8%;
+    }
+    .boxLeft .boxMaini .welcome h1 {
+        font-size: 70px;
+    }
+    .boxLeft .boxMaini .welcome p{
+        font-size: 1.2rem;
+    }
+   
+}
+
+@media screen and (max-width: 500px){
+    .dotPagination .btnPagination {
+        flex: 0 0 7.5%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .boxLeft .boxMaini .welcome h1 {
+        font-size: 60px;
+    }
+    .dotPagination .btnPagination {
+        flex: 0 0 7%;
+        font-size: 0.7rem;
+    }
+    
+}
+@media screen and (max-width: 370px){
+    .dotPagination .btnPagination {
+        flex: 0 0 6.4%;
+        font-size: 0.7rem;
+    }
+    .boxLeft .boxMaini .welcome h1 {
+        font-size: 55px;
+    }
+    .boxLeft .boxMaini .welcome p{
+        font-size: 0.8rem;
+    }
+    .tableUpdates tr th{
+        font-size: 0.5rem;
+    }
+    .advantage .containerAdvantage .boxAdvantage img{
+        width: 70%;
+        margin-right: 5px;
+    }
+
+}

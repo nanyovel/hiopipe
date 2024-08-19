@@ -1,0 +1,227 @@
+
+/* ----------Left Box// ------------- */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    position: relative;
+}
+.boxLeft .boxImg{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.boxLeft .boxImg img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    
+}
+
+/* ----------Right Box // Tagsblog------------- */
+.boxRight{
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.boxRight::-webkit-scrollbar{
+    width: 7px;
+}
+.boxRight::-webkit-scrollbar-thumb{
+    background-color: var(--colorPrimary);
+    border-radius: 7px;
+}
+
+.boxRight .containerMain{
+    width: 85%;
+    /* border: 1px solid red; */
+    /* background-color: #1878f1; */
+    /* overflow: scroll; */
+}
+
+/* .boxRight .containerMain::-webkit-scrollbar{
+    width: 7px;
+}
+.boxRight .containerMain::-webkit-scrollbar-thumb{
+    background-color: var(--colorPrimary);
+    border-radius: 7px;
+} */
+
+.boxRight .containerMain .containerTag {
+    position: absolute;
+    padding: 0px 30px;
+    right: 50px;
+    top: 50px;
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: end;
+    z-index: 1;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.boxRight .containerMain .boxButtonBack i{
+    font-size: 2rem;
+    color: var(--colorPrimary);
+
+}
+
+.boxRight .containerMain .containerTag .boxTag{
+    display: flex;
+    justify-content: space-between;
+}
+.boxRight .containerMain .containerTag .boxTag .tag{
+    border-radius: 16px;
+    height: 32px;
+    padding: 8px;
+    margin: auto 10px;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+/* ----------Right Box // h1------------- */
+.boxRight .containerMain  .containerH1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    /* border: 1px solid black; */
+    margin-bottom: 15vh;
+    
+}
+
+.boxRight .containerMain .containerH1 .boxH1 h1{
+    font-size: 70px;
+    font-weight: 300;
+    color: var(--colorPrimary);
+    border-bottom: 1px solid #000;
+    width: 100%;
+    /* margin-bottom: 25px; */
+    text-align: center;
+}
+
+.boxRight .containerMain .containerH1 .boxAuthorDate{
+    width: 80%;
+}
+
+.boxRight .containerMain .containerH1 .boxAuthorDate .boxAuthor,
+.boxRight .containerMain .containerH1 .boxAuthorDate .boxDate{
+    display: block;
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+/* ----------Right Box // Contents------------- */
+.boxRight .containerMain .boxParagraph{
+    line-height: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.boxRight .containerMain .boxImage{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.boxRight .containerMain .boxImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boxRight .boxSecondaryZone{
+    width: 100%;
+
+}
+
+.titles{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    color: var(--colorPrimary);
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1400px){
+    .boxRight .containerMain .containerH1 .boxH1 h1{
+        font-size: 50px;
+    }
+    .boxRight .containerMain .containerTag .boxTag .tag{
+        height: 20px;
+    }
+   
+  
+}
+
+@media screen and (max-width: 1000px){
+    .boxRight .containerMain .containerH1 .boxH1 h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .boxRight .containerMain .containerH1 .boxH1 h1{
+        font-size: 35px;
+    }
+    .boxRight .containerMain{
+        width: 80%;
+    }
+    .titles{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .container{
+        /* display: flex; */
+        display: block;
+        /* flex-direction: column; */
+        overflow-y: scroll;
+    }
+    .boxRight .containerMain{
+        width: 100%;
+        padding: 5px 15px;
+        overflow-y: scroll;
+    }
+    /* .boxRight .containerMain::-webkit-scrollbar{
+        width: 7px;
+    }
+    .boxRight .containerMain::-webkit-scrollbar-thumb{
+        background-color: var(--colorPrimary);
+        border-radius: 7px;
+    } */
+    .boxRight .containerMain .containerH1{
+        height: 120px;
+    }
+    .boxLeft{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .boxRight{
+        width: 100%;
+        /* padding-top: 40px; */
+        padding-top: 100px;
+       
+    }
+
+}

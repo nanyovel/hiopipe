@@ -1,0 +1,148 @@
+
+:root{
+    --colorPrimary: #1878f1;
+    --colorSecondary: #faebd7;
+    --colorThird: #f2f2f2;
+    --colorWarning: #f66060;
+    --colorSuccess: #1ed12d;
+    --colorAlert: #ff1c1c;
+    --colorGray: #575757;
+    }
+
+
+/* ----------BoxLeft Style------------- */
+.boxLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 40px;
+}
+
+.boxLeft  .textMain h1{
+    font-size: 50px;
+    font-weight: 300;
+    color: var(--colorPrimary);
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.contentBottom{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contentBottom .boxP{
+    margin-bottom: 30px;
+}
+
+/* .contentBottom .boxAnchor{
+    border: 1px solid blue; 
+} */
+
+.contentBottom .boxAnchor .boxLink{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    /* background-color: #1ed12d; */
+}
+
+.contentBottom .boxAnchor .boxLink .anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    /* background-color: #ff1c1c; */
+}
+
+.contentBottom .boxAnchor  .text{
+    margin-bottom: 15px;
+}
+.contentBottom .boxAnchor .boxLink .anchor .text{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 8px;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    background-color: var(--colorPrimary);
+    color: #fff;
+    text-align: center;
+    transition: 0.3s ease all;
+}
+
+.contentBottom .boxAnchor .boxLink .anchor .text:hover{
+    box-shadow: 3px 0px 30px rgba(24, 120, 241,1);
+    transform: scale(1.1);
+}
+
+
+/* ----------BoxRight Style------------- */
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+}
+.boxRight .boxImg{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.boxRight .boxImg img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .boxLeft .textMain h1{
+        font-size: 35px;
+    }
+    .contentBottom .boxAnchor .boxLink .anchor{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 570px){
+    .container{
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+        height: auto;
+    }
+    .boxLogoCenter{
+        top: 50%;
+    }
+    .boxLeft .textMain h1{
+        margin-bottom: 100px;
+    }
+    
+    .contentBottom .boxAnchor .boxLink .anchor .text{
+        font-size: 16px;
+    }
+    .boxRight{
+        width: 100%;
+    }
+    .boxRight .boxImg img{
+        height: 100vh;
+    }
+    .boxLeft{
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+    }
+}

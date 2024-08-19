@@ -1,0 +1,769 @@
+/* ----------Left Box// ------------- */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+}
+.boxLeft .boxImg{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.boxLeft .boxImg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------Right Box ------------- */
+.boxRight{
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.boxRight::-webkit-scrollbar{
+    width: 7px;
+}
+.boxRight::-webkit-scrollbar-thumb{
+    background-color: var(--colorPrimary);
+    border-radius: 7px;
+}
+
+.boxRight .containerMain{
+    width: 85%;
+}
+
+.boxRight .containerMain .containerTag {
+    position: absolute;
+    padding: 0px 30px;
+    right: 40px;
+    top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    z-index: 1;
+    display: flex;
+}
+
+.boxRight .containerMain .containerTag .boxTag{
+    display: flex;
+    justify-content: end;
+}
+.boxRight .containerMain .containerTag .boxTag .tag{
+    border-radius: 16px;
+    height: 32px;
+    padding: 8px;
+    margin: auto 10px;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+/* ----------Right Box // h1------------- */
+.boxRight .containerMain  .containerH1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 15vh;   
+}
+
+.boxRight .containerMain .containerH1 .boxH1{
+    width: 100%;
+}
+
+.boxRight .containerMain .containerH1 .boxH1 h1{
+    font-size: 70px;
+    font-weight: 300;
+    color: var(--colorPrimary);
+    border-bottom: 1px solid #000;
+    width: 100%;
+    text-align: center;
+}
+
+.boxRight .containerMain .containerH1 .boxDescriptioPrice .boxDescription h2{
+    font-size: 1.5rem;
+}
+
+.boxRight .boxDescriptioPrice{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 1.3rem;
+}
+
+/* ----------Right Box// BoxBuy------------- */
+.boxRight .boxBuy{
+    display: flex;
+    justify-content: start;
+    height: 30px;
+    width:60%;
+    margin-bottom: 30px;
+}
+
+.boxRight  .boxBuy .boxButtonPlusLess{
+    width: auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    width: 155px;
+    position: relative;
+    margin-right: 25px;
+}
+
+.boxRight  .boxBuy .boxButtonPlusLess button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: #d2bca0;
+    border: none;
+    outline: none;
+    z-index: 5;
+}
+
+.boxRight  .boxBuy .boxButtonPlusLess .btnMinus{
+    position: absolute;
+    left: 0;
+}
+
+.boxRight  .boxBuy .boxButtonPlusLess .btnPlus{
+    position: absolute;
+    left: 125px;
+}
+
+.boxRight  .boxBuy .boxButtonPlusLess button:hover{
+    cursor: pointer;
+    background-color: #cdbbbb;
+}
+
+.boxRight .boxBuy .boxButtonPlusLess button:active{
+    background-color: #dadada;
+}
+
+.boxRight .boxBuy .boxButtonPlusLess .inputQty{
+    width: 120px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: var(--colorLight);
+    color:var(--colorPrimary);
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    font-weight: normal;
+}
+
+/* Hide button plus minus of input type number */
+.boxRight .boxBuy .boxButtonPlusLess .inputQty::-webkit-inner-spin-button, 
+.boxRight .boxBuy .boxButtonPlusLess .inputQty::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.boxRight .boxBuy .boxButtonPlusLess .inputQty { -moz-appearance:textfield; }
+
+
+/* ----------Right Box// Button Add Cart------------- */
+.boxRight .boxBuy .buttonAddCart .btnAddCart{
+    width: 200px;
+    height: 40px;
+    background-color:  #fda300;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.boxRight .boxBuy .buttonAddCart .btnAddCart:hover{
+    cursor: pointer;
+    background-color:  #ffb834;
+    
+}
+.boxRight .boxBuy .buttonAddCart .btnAddCart:active{
+
+    background-color:  #a37623;
+}
+
+/* ----------Right Box// SKU/LIKE------------- */
+.boxRight .boxSkuLike{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.boxRight .boxSkuLike span{
+    color: var(--colorGray);
+}
+
+.boxRight .boxSkuLike .boxSku{
+    display: flex;
+    margin: 5px;
+    margin-right: 40px;
+}
+
+.boxRight .boxSkuLike .like{
+    display: flex;
+}
+
+.boxRight .boxSkuLike .like i{
+    margin-right: 5px;
+    color: var(--colorAlert);
+}
+
+/* ----------Right Box// OtherDate------------- */
+.boxRight .containerOthersDate{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.boxRight .containerOthersDate .boxOtherDate{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.boxRight .containerOthersDate .boxOtherDate i{
+    margin-right: 10px;
+    color: var(--colorPrimary);
+
+}
+
+.boxRight .containerOthersDate .boxOtherDate p{
+    color: var(--colorGray);
+}
+
+
+/* ----------Right Box// ReviewsDescription------------- */
+.boxRight .containerDescriptionReviews{
+    padding: 20px;
+}
+
+.boxRight .containerDescriptionReviews .tabsDR{
+    width: 100%;
+    border-bottom: 1px solid var(--colorGray);
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 60px;
+}
+
+.boxRight .containerDescriptionReviews .tabsDR li{
+    margin-right: 10px;
+    width: auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+.boxRight .containerDescriptionReviews .tabsDR a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-weight: bold;
+    color: var(--colorGray);
+    border-bottom: 4px solid transparent;
+}
+.boxRight .containerDescriptionReviews .tabsDR a:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+.boxRight .containerDescriptionReviews .tabsDR .active-tab{
+    border-bottom: 4px solid var(--colorPrimary);
+    color: black;
+}
+.boxRight .containerDescriptionReviews .boxDescription{
+    display: none;
+}
+
+
+.boxRight .containerDescriptionReviews .boxDescription .boxH2 h2{
+    font-size: 2rem;
+    border-bottom: none;
+    z-index: 100;
+}
+
+.boxRight .containerDescriptionReviews .boxDescription .boxTextDescription{
+    margin-bottom: 15px;
+}
+
+.boxRight .containerDescriptionReviews .boxDescription .boxTextDescription p{
+    color: var(--colorGray);
+}
+
+.boxRight .containerDescriptionReviews .boxDescription .boxImage{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boxRight .containerDescriptionReviews .boxDescription .boxImage img{
+    width: 30%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+.boxRight .containerDescriptionReviews .boxHiden{
+    display: none;
+}
+.boxRight .containerDescriptionReviews .boxVisible{
+    display: block;
+}
+
+/* ----------Right Box// Form of Reviews------------- */
+.boxRight .boxReviewsSent .containerFormReviews{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 700px;
+}
+
+.boxRight  .boxReviewsSent .containerFormReviews .form {
+    width: 80%;
+    padding: 20px;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews  .form  h3{
+    margin-bottom: 25px;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput{
+    background-color: #f4e3cd;
+    padding: 20px;
+
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxWarningMessage{
+    margin-bottom: 15px;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxWarningMessage p{
+    color: var(--colorGray);
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxRating{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxRating .boxTextRating{
+    width: 100%;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxRating .boxStart{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxRating .boxStart .rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxRating .boxStart input[type="radio"] {
+    display: none;
+}
+  
+.boxRight .boxReviewsSent .containerFormReviews .form   .containerInput .boxRating .boxStart .stars {
+    color: grey;
+    cursor: pointer;
+    font-size: 20px;
+}
+  
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxRating .stars:hover,
+.boxRight .boxReviewsSent .containerFormReviews .form  .boxRating .stars:hover ~ .stars {
+    color: var(--colorPrimary);
+}
+  
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput input[type="radio"]:checked ~ .stars {
+    color: var(--colorPrimary);
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxReviewsText label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxReviewsText .textAreaReviews{
+    width: 100%;
+    height: 80px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: 0.4s ease all;
+
+    
+}
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxReviewsText .textAreaReviews:focus{
+    box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+    -webkit-box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+    -moz-box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm{
+    width: 100%;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .titleError{
+    color: var(--colorAlert) ;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .boxInput{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .boxInput .input{
+    width: 60%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: 0.4s ease all;
+    outline: none;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .boxInput .input:focus{
+    box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+    -webkit-box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+    -moz-box-shadow: -1px 0px 5px 0px var(--colorPrimary);
+}
+
+/* ----------Right Box// Checkbox SaveBrowser - Btn submit------------- */
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxSaveBrowser{
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxSaveBrowser label,
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxSaveBrowser b
+{
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxSaveBrowser label input:hover{
+    cursor: pointer;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxBtnSubmit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxBtnSubmit button{
+    height: 45px;
+    line-height: 45px;
+    width: 40%;
+    background-color: var(--colorPrimary);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxBtnSubmit button:hover{
+    box-shadow: 3px 0px 30px rgba(24, 120, 241,1);
+    transform: scale(1.1);
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxBtnSubmit .boxMessage{
+    display: none;
+    background-color: var(--colorSuccess);
+    width: 90%;
+    text-align: start;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxBtnSubmit .boxMessageActive{
+    display: block;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxBtnSubmit .boxMessage p{
+    font-size: 14px;
+    color: #fff;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxErrorMessage{
+    font-size: 12px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: none;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxErrorMessage i,
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxErrorMessage b
+{
+    color: var(--colorAlert);
+}
+
+/* ----------Right Box// Form // Validations------------- */
+
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .messageError{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .messageErrorActive{
+    display: block;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .boxInput .iconName{
+    position: absolute;
+    right: 10px;
+    z-index: 5px;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .errorMessageInput{
+    height: 50px;
+    line-height: 20px;
+    color: var(--colorAlert);
+    padding: 0 5px;
+    border-radius: 3px;
+    width: 99%;
+    display: none;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .errorMessageInputActive{
+    display: block;
+}
+
+
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .boxInput  .inputIncorrect{
+    border: 3px solid var(--colorAlert);
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .boxInput .iconActive{
+    opacity: 1;
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .boxInput .iconSuccess{
+    color: var(--colorSuccess);
+}
+
+.boxRight .boxReviewsSent .containerFormReviews .form  .containerInput .boxForm .boxInput .iconIncorrect{
+    color: var(--colorAlert);
+}
+
+/* ----------Right Box// Reviews------------- */
+
+.boxRight .containerDescriptionReviews  .containerReviews{
+    margin-bottom: 40px;
+    padding: 60px 0;
+}
+
+.boxRight .containerDescriptionReviews .containerReviews .boxReviews{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px solid var(--colorGray);
+    background-color: var(--colorLight);
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.boxRight .containerDescriptionReviews .containerReviews .boxReviews{
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+
+.boxRight .containerDescriptionReviews .containerReviews .boxReviews .boxTextreviews{
+    padding: 20px;
+}
+
+.boxRight .containerDescriptionReviews .containerReviews .boxReviews .boxTextreviews p{
+    color: var(--colorGray);
+
+}
+
+
+.boxRight .containerDescriptionReviews .containerReviews .boxReviews .boxTextreviews i{
+    color: var(--colorPrimary);
+}
+
+.boxRight .containerDescriptionReviews .containerReviews .boxReviews .containerDateName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: end;
+}
+
+.boxRight .containerDescriptionReviews .containerReviews .boxdateName{
+    color: var(--colorPrimary);
+    width: 70%;
+}
+
+@media screen and (max-width: 1450px){
+    .boxRight .boxBuy{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .boxRight .containerMain .containerH1 .boxDescriptioPrice .boxDescription h2{
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .boxRight .boxReviewsSent .containerFormReviews .form {
+        width: 100%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1000px) {
+    
+.boxRight .containerMain .containerH1 .boxDescriptioPrice .boxDescription h2{
+    font-size: 1.1rem;
+}
+    
+}
+
+@media screen and (max-width: 900px){
+    .boxRight .boxBuy .buttonAddCart .btnAddCart{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .boxRight .boxBuy .buttonAddCart .btnAddCart{
+        font-size: 0.8rem;
+        width: 100px;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .boxRight .containerDescriptionReviews{
+        padding: 0;
+    }
+    .boxRight .containerDescriptionReviews .boxDescription {
+        padding: 10px;
+    }
+    .boxRight .boxReviewsSent .containerFormReviews .form{
+        padding: 0;
+    }
+    .boxRight .containerMain{
+        width: 80%;
+    }
+    .boxRight .containerDescriptionReviews .tabsDR a {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    .boxRight .boxBuy{
+        flex-direction: column;
+        height: 100px;
+    }
+    .boxRight .boxBuy .boxButtonPlusLess{
+        margin-bottom: 40px;
+    }
+    .boxRight .boxBuy .buttonAddCart .btnAddCart{
+        width: 150px;
+    }
+    
+    .boxRight .containerDescriptionReviews .boxDescription .boxH2 h2{
+        font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width: 570px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .boxLeft{
+        width: 100%;
+    }
+    .boxRight{
+        width: 100%;
+        overflow: auto;
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+    .boxRight .containerMain{
+        overflow-y: scroll;
+    }
+   
+    .boxRight .containerMain{
+
+        width: 100%;
+    }
+    .boxLogoCenter{
+        top:50%;
+    }
+    .boxRight .containerMain .containerTag{
+        top: 15px;
+    }
+}

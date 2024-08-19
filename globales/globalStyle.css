@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------Global Style------------- */
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --colorPrimary: #1878f1;
+    --colorSecondary: #faebd7;
+    --colorThird: #f2f2f2;
+    --colorWarning: #f66060;
+    --colorSuccess: #1ed12d;
+    --colorAlert: #ff1c1c;
+    --colorGray: #575757;
+    --colorLight: #f4e3cd;
+    }
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+
+.boxRight{
+    width: 50%;
+    height: 100vh;
+    background-color: var(--colorSecondary);
+    position: relative;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
+.boxLeft{
+    background-color: var(--colorSecondary);
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------Global Style//Logo Main------------- */
+
+.boxLogoCenter{
+    width: 90px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.boxLogoCenter a{
+    /* width: 10px; */
+    transform: rotate(270deg);
+}
+
+.boxLogoCenter img{
+    width: 90px;
+}
+
+.boxLogoCenter .boxHandTouch{
+    display: none;
+}
+
+/* ----------Global Style//Header Menu // Firt Middle------------- */
+.boxHeaderMenu{
+    position: absolute;
+    right: -375px;
+    top: 40px;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.boxHeaderMenu .halfTop{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    /* right: 0; */
+}
+
+
+.boxHeaderMenu .halfTop .boxSearch .inputSearch{
+    position: absolute;
+    width: 65%;
+    right: -100%;
+    top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    height: 24px;
+    padding: 10px;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.boxHeaderMenu .halfTop .boxSearch .inputSearchSlide{
+    position: absolute;
+    right:405px;
+    /* border: 5px solid red; */
+}
+
+
+.boxHeaderMenu .halfTop .boxIconTop{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    align-items: center;
+    border-radius: 10px 0 0 0;
+    overflow: hidden;
+    width: 25px;
+    border: 1px solid #fff;
+}
+
+.boxHeaderMenu .halfTop .boxIconTop ul{
+    width: 100%;
+}
+
+.boxHeaderMenu .halfTop .boxIconTop li{
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.boxHeaderMenu .halfTop .boxIconTop button{
+    width: 100%;
+    height: 30px;
+    display: block;
+    background-color: #000;
+    z-index: 45;
+    border: none;
+    outline: none;
+}
+
+.boxHeaderMenu .halfTop .boxIconTop button:hover{
+    cursor: pointer;
+    background-color: var(--colorGray);
+}
+
+.boxHeaderMenu .halfTop .boxIconTop button i{
+    z-index: 40;
+    color: white;
+}
+
+/* ----------Global Style//Header Menu // (HioMenu)------------- */
+.boxHeaderMenu .boxHalfBottom{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 120px;
+    position: relative;
+    justify-content: center;
+    align-items: start;
+    width: auto;
+    /* border: 1px solid green; */
+    /* position: relative; */
+    /* display: none; */
+    left: 0;
+ 
+
+}
+
+/* ************************************************************************************************************************/
+.boxHeaderMenu .boxHalfBottom .boxFixedMenuHio{
+    border: 1px solid #fff;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    width: 25px;
+    z-index: 500;
+    border-radius: 0 0 0 10px;
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    justify-content: start;
+    
+}
+
+.btnSliderMenuHio{
+    color: white;
+    background-color: #000;
+    border-radius: 0 0 0 10px;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: none;
+}
+
+.btnSliderMenuHio:hover{
+cursor: pointer;
+background-color: var(--colorGray);
+}
+.boxHeaderMenu .boxHalfBottom .boxFixedMenuHio .boxH2{
+    width: 100%;
+    display: block;
+    align-items: end;
+    overflow: hidden;
+    position: absolute;
+}
+
+.boxHeaderMenu .boxHalfBottom .boxFixedMenuHio .boxH2 h2{
+    position: relative;
+    display: block;
+    /* width: ; */
+    font-size: 1.1rem;
+    height:120px;
+    white-space: nowrap;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ***************************************************************************************************************************** */
+.boxHeaderMenu .boxHalfBottom .containerSlideMenuHio{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 0 10px;
+    background-color: #000;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    display: block;
+    /* border: 1px solid red; */
+    height: 200px;
+    left: 0;
+    transition: 0.3s all ease;
+    display: block;
+    height: 100%;
+}
+.boxHeaderMenu .boxHalfBottom .sliderMenuHioBlock{
+    display: block;
+    left: -400px;
+    opacity: 1;
+}
+
+.boxHeaderMenu .boxHalfBottom .sliderMenuHio{
+    display: block; 
+    left: 0;
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio{
+    position: absolute;
+    /* border: 3px solid purple; */
+    position: absolute;
+    /* width:250px; */
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    /* left: 20px; */
+}
+
+
+.boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio .boxMenu {
+    display: flex;
+    width: 200%;
+    justify-content: start;
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio .boxMenu ul{
+    display: flex;
+    list-style: none;
+    justify-content: start;
+    /* border: 1px solid yellow; */
+    padding-top: 5px;
+
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio .boxMenu ul li{
+    width: auto;
+    margin: 0 5px;
+    font-size: 1rem;
+
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio .boxMenu ul li a{
+    display: block;
+    text-decoration: none;
+    width: auto;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: rgb(0, 0, 0, 0.5 );
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio .boxMenu ul li a:hover{
+    background-color: var(--colorGray);
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxIconSocial{
+    /* background-color: #1ed12d; */
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxIconSocial a{
+    color: #fff;
+    text-decoration: none;
+    /* border: 1px solid #fff; */
+    margin: 5px;
+    padding: 5px;
+    transition: 0.5s ease all;
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxIconSocial a:hover{
+    color: var(--colorPrimary);
+    box-shadow: 0 0 10px 5px rgb(24, 120, 241, 0.75);
+    -webkit-box-shadow: 0 0 10px 5px rgb(24, 120, 241, 0.75);
+    -moz-box-shadow: 0 0 10px 5px rgb(24, 120, 241, 0.75);
+    border-radius: 5px;
+}
+
+.boxHeaderMenu .containerSlideMenuHio .boxCopyrightMenu{
+    display: flex;
+    color: #fff;
+    font-size: 0.7rem;
+    justify-content: center;
+    /* padding-bottom: 5px; */
+}
+
+.titles{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    color: var(--colorPrimary);
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:570px){
+    .boxLogoCenter{
+        top: auto;
+    }
+    .boxLogoCenter img{
+        width: 60px;
+    }
+    .boxLogoCenter .boxHandTouch{
+        display: block;
+        color: var(--colorPrimary);
+        position: relative;
+        border: 1px solid black;
+    }
+    .boxLogoCenter .boxHandTouch i{
+        font-size: 1.7rem;
+        /* font-size: 2.5rem; */
+        position: absolute;
+        left: -40px;
+
+        animation: aguacate 0.7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        z-index: 100;
+    }
+    @keyframes aguacate{
+        0%{
+            left: -40px;
+        }
+        100%{
+            left: -20px;
+        }
+    }
+   
+    .boxLogoCenter .boxHandTouch p{
+        font-size: 1rem;
+        position: absolute;
+        /* left: -40px; */
+        right: 5px;
+        /* width: auto; */
+        height: auto;
+        display: block;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: #57575772;
+        white-space: nowrap;
+    }
+
+    .layer{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: hsla(0, 0%, 0%, 0.7);
+        z-index: 300;
+    }
+    .boxHeaderMenu{
+        background-color: #1878f1;
+        height: 50px;
+        width: 100%;
+        top: 0;
+        flex-direction: row;
+        right: auto;
+        justify-content: space-between;
+        z-index: 600;
+        position: fixed;
+    }
+    .boxHeaderMenu .halfTop{
+        width: 50%;
+        z-index: 500;
+    }
+    .boxHeaderMenu .front{
+        z-index: 610;
+    }
+    .boxHeaderMenu .halfTop .boxSearch .inputSearch{
+        right: 0;
+        left:20px;
+        top: 100px;
+        height: 30px;
+        width: 80%;
+    }
+    .boxSearch{
+        height: 100vh;
+        width: 70vw;
+        background-color: rgba(0, 0, 0, 0.747);
+        /* z-index: ; */
+        position: absolute;
+        left: -100%;
+        transition: 0.3s ease all;
+    }
+    .boxSearchUbicated{
+        left: 0;
+    }
+  
+    .boxHeaderMenu .halfTop .boxIconTop{
+        width: 30%;
+        position: absolute;
+        left: 10px;
+        border-radius: 0;
+        background-color: transparent;
+        border: none;
+    }
+    .boxHeaderMenu .halfTop .boxIconTop button i{
+        font-size: 1.2rem;
+        /* border: 1px solid white; */
+    }
+    .boxHeaderMenu .halfTop .boxIconTop ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .boxHeaderMenu .halfTop .boxIconTop button{
+        width: 25%;
+        display: inline-block;
+        height: 51px;
+        background: none;
+    }
+    .boxHeaderMenu .halfTop .boxIconTop button:hover{
+        background: none;
+    }
+    .boxHeaderMenu .boxHalfBottom{
+        height: 100vh;
+        width: 100%;
+        /* border: 3px solid red; */
+        left: 100%;
+        transition: 0.3s ease all;
+    }
+    .boxHeaderMenu .boxHalfBottomUbicated{
+        left: 0;
+    }
+    .boxHeaderMenu .boxHalfBottom .containerSlideMenuHio{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio {
+        right: auto;
+        width: 100%;
+        top: 40px;
+    }
+    .boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio .boxMenu {
+        width: 100%;
+    }
+    .boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio .boxMenu ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .boxHeaderMenu .containerSlideMenuHio .boxSlideMenuHio .boxMenu ul li{
+        width: 100%;
+    }
+    
+    .boxHeaderMenu .boxHalfBottom .boxFixedMenuHio{
+        display: none;
+    }
+    .boxHeaderMenu .boxHalfBottom .boxFixedMenuHio .boxH2{
+        display: none;
+    }
+    
+   
+
+
+
+
+
+    
+.boxBarsMenu{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    /* background-color: #f11818; */
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.boxBarsMenu:hover{
+    cursor: pointer;
+}
+
+.boxBarsMenu span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #ffffff;
+    margin-top: 7px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.activeline1{
+    transform: rotate(45deg) translate(0px, 2px); 
+}
+
+.activeline2{
+    opacity: 0;
+    margin-left: -30px; 
+}
+
+.activeline3{
+    transform: rotate(-45deg) translate(0px, 2px);
+}
+}

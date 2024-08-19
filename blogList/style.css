@@ -1,0 +1,251 @@
+/* ----------Left Box// ------------- */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+}
+.boxLeft .boxImg{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.boxLeft .boxImg img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* ----------Right Box// ------------- */
+.boxRight  h1{
+    font-size: 70px;
+    font-weight: 300;
+    color: var(--colorPrimary);
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+.boxRight{
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.boxRight::-webkit-scrollbar{
+    width: 7px;
+}
+.boxRight::-webkit-scrollbar-thumb{
+    background-color: var(--colorPrimary);
+    border-radius: 7px;
+}
+
+
+.containerThumbnail{
+    scroll-behavior: smooth;
+    padding: 5px 10px;
+    width: 85%;
+}
+
+.containerThumbnail .anchorMain{
+    text-decoration: none;
+}
+
+.containerThumbnail .boxThumbnail{
+    background-color: var(--colorSecondary);
+    transition: ease all 0.4s;
+
+}
+
+.containerThumbnail .boxThumbnail:hover{
+    cursor: pointer;
+    background-color: var(--colorGray);
+    border-radius: 5px;
+}
+
+
+.containerThumbnail .boxThumbnailInternal{
+    /* display: flex; */
+    /* height: 9vh; */
+    text-overflow: ellipsis;
+    border: 1px solid var(--colorAlert);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 5px 0;
+    border-radius: 5px;
+    /* width: 500px; */
+    /* height: 100px; */
+    /* background-color: #000; */
+    width: 100%;
+    height: 100px;
+
+}
+
+.containerThumbnail .boxThumbnailInternal .boxImg{
+    height: 100%;
+    /* width: 150px; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.containerThumbnail .boxThumbnailInternal .boxImg img{
+    height:  100%;
+    object-fit: cover;
+    
+}
+
+.containerThumbnail .boxThumbnailInternal .boxText{
+   display: grid;
+   grid-template-rows: 1fr 2fr;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.containerThumbnail .boxThumbnailInternal .boxText h3{
+    color: var(--colorPrimary);
+    border-bottom: 1px solid var(--colorPrimary);
+    display: inline;
+    width: auto;
+}
+
+
+.containerThumbnail .boxThumbnailInternal .boxText p{
+    /* width: 100%; */
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    color: #000;
+    /* border: 1px solid black; */
+    /* height: 100%; */
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    /* height: 50px; */
+}
+
+
+@media screen and (max-width: 1100px){
+    .containerThumbnail .boxThumbnailInternal{
+        grid-template-columns: 1.5fr 3.5fr;
+    }
+    .boxRight  h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .containerThumbnail .boxThumbnailInternal{
+        grid-template-columns: 2fr 2fr;
+    }
+    .boxRight  h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 570px){
+   
+    .container{
+        display: inline-block;
+        flex-direction: column;
+        overflow-y: auto;
+        /* width: 100%; */
+        /* height: 100vh; */
+        /* position: relative; */
+    }
+    .boxLeft{
+        width: 100%;
+        /* overflow-y: scroll; */
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        top: 0;
+    }
+    .boxRight{
+        width: 100%;
+        position: static;
+        padding-top:100px ;
+        /* overflow: hidden; */
+    }
+
+    .boxLogoCenter{
+        top: 100%;
+        bottom: 0;
+    }
+
+    .boxLogoCenter .boxHandTouch{
+        display: block;
+        color: var(--colorPrimary);
+        position: relative;
+        /* border: 1px solid black; */
+    }
+    .boxLogoCenter .boxHandTouch i{
+        font-size: 2rem;
+        font-size: 2.5rem;
+        position: absolute;
+        left: -40px;
+
+        animation: aguacate 0.7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes aguacate{
+        0%{
+            left: -40px;
+        }
+        100%{
+            left: -20px;
+        }
+    }
+
+    .boxLogoCenter .boxHandTouch p{
+        font-size: 1rem;
+        position: absolute;
+        /* left: -40px; */
+        right: 5px;
+        /* width: auto; */
+        height: auto;
+        display: block;
+        padding: 5px;
+        /* border: 1px solid black; */
+        border-radius: 4px;
+        /* background-color: #000; */
+        white-space: nowrap;
+    }
+    .containerThumbnail{
+        width: 100%;
+        overflow-y: scroll;
+    }
+    
+    .containerThumbnail .boxThumbnailInternal{
+        grid-template-columns: 0.7fr 2.3fr;
+        width: 100%;
+    }
+    .boxThumbnail{
+        width: 100%;
+    }
+    /* .boxLeft .boxMaini{
+        width: 100%;
+        overflow-y: scroll;
+        padding: 20px;
+    }
+    
+    .boxLeft .boxMaini::-webkit-scrollbar{
+        width: 7px;
+    }
+    .boxLeft .boxMaini::-webkit-scrollbar-thumb{
+        background-color: var(--colorPrimary);
+        border-radius: 7px;
+    } */
+}
+
+@media screen and (max-width: 470px){
+
+}
